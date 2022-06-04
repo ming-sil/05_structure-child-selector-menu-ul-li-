@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>응용메뉴</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+            color: #1d1d1d;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        /* =>reset */
+
+        .header{
+            width: 100%;
+            height: 120px;
+            background-color: lightgrey;
+        }
+
+        .in_header{
+            width: 1400px;
+            height: 100%;
+            margin: 0 auto;
+            /* background-color: grey; */
+        }
+
+        .logo{
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 900;
+            line-height: 60px;
+        }
+
+        .menu_wrap{
+            width: 650px;
+            height: 50%;
+            /* background-color: antiquewhite; */
+            margin: 0 auto;
+        }
+
+        .menu_wrap li{
+            float: left;
+            font-size: 18px;
+            margin-right: 86px;
+            /* text-align: center; */
+            line-height: 60px;
+            /* background-color: salmon; */
+            /* =>메뉴의 길이가 다 다를경우 각 메뉴들의 크기값을 지정하지않음
+            (메뉴의 크기값을 넣지 않고 float 를 사용하게 되면 자동으로 안쪽 자식에 맞춰서 크기가 잡힘) */
+        }
+
+        .menu_wrap li:last-child{
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+
+        <div class="in_header">
+
+            <h1 class="logo">logo</h1>
+            <div class="menu_wrap">
+
+                <ul>
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                  
+                    <li>
+                        <a href="#">새소식</a>
+                    </li>
+                   
+                    <li>
+                        <a href="#">제품</a>
+                    </li>
+                   
+                    <li>
+                        <a href="#">인재채용</a>
+                    </li>
+                   
+                    <li>
+                        <a href="#">고객지원</a>
+                    </li>
+                    <!-- 
+                    =>Alt누르면서 클릭:멀티클릭
+                    =>li*5>a : li안에 a태그 5개 -->
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
